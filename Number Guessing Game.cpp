@@ -6,11 +6,11 @@ int main()
 {
 	int secretnumber, guess;
 	secretnumber = rand() % 100 + 1;
-	cout << "<<---Welcome to the 🤔  guess 💡 a number game.🤔  Guess a number from 1 to 💯 !-->>\n\n";
+	cout << "<<---Welcome to the guess a number game.Guess a number from 1 to 100!-->>\n\n";
         int attempts=0;
 	do
 	{
-		cout << "Enter a guess between 1️ and 100 :➡️  ";
+		cout << "Enter a guess between 1️ and 100 : ";
 		cin >> guess;
 		attempts++;
 
@@ -19,7 +19,7 @@ int main()
 		else if (guess < secretnumber)
 			cout << "<<---Too low! Try Again!--->>\n\n";
 		else
-			cout << "\n<<---🎊 🎊  Congratulation  🎉 🎉! You got correct guesses!--->\n";
+			cout << "\n<<---🎊 🎊  Congratulation 🎉 🎉 ! You got correct guesses!--->\n";
 	} while (guess != secretnumber);
 
 	return 0;
